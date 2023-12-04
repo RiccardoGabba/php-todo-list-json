@@ -1,19 +1,21 @@
-body{
+body {
     background-color: #eceff0;
 }
 
-body, input{
-    color:#363639 ;
+body,
+input {
+    font: 1em;
+    color: #363639;
 }
 
-a{
+a {
     text-decoration: none;
     border-bottom: 1px dashed #363639;
 }
 
 /* List */
 
-.list{
+.list {
     background-color: #fff;
     margin: 20px auto;
     width: 100%;
@@ -25,36 +27,38 @@ a{
 }
 
 /* Items */
-.items{
+.items {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.items li:hover -done-button {
+
+.items li:hover .done-button {
     opacity: 1;
 }
 
-.items .item.done{
+.items .item.done {
     text-decoration: line-through;
 }
 
-.items li, .item-add .input{
+.items li,
+.item-add .input {
     border: 0;
     border-bottom: 1px dashed #ccc;
     padding: 15px 0;
 }
 
-.input{
+.input {
     width: 100%;
+
 }
 
-input:focus{
+.input:focus {
     outline: none;
 }
 
-/* Dibe Button */
-
-.done-button{
+/* Done Button */
+.done-button {
     display: inline-block;
     font-size: 0.8em;
     background-color: #d9dfe1;
@@ -64,7 +68,7 @@ input:focus{
     opacity: 0.4;
 }
 
-/* Submit Button */ 
+/* Submit Button */
 
 .submit {
     background-color: #fff;
