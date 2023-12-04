@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <link rel="stylesheet" href="./app/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="list">
-        <h1>To Do</h1>
+    <div id="app">
+        <div class="list">
+            <h1>To Do</h1>
 
-        <ul class="items">
-            
-            <li v-for='task in tasks'> 
-                <span>{{ tasks.text }}</span>
-            </li>
-            
-        </ul>
-        
+            <ul class="items">
 
-        <form action="add.php" method="post" class="item-add">
+                <li v-for="task in tasks">
+                    <span>{{ task.text }}</span>
+                </li>
 
-            <input type="text" name="task" placeholder="Type  a new item here." class="input" v-model="taskText" >
-            <input type="submit" value="submit" class="submit" value="Submit">
+            </ul>
 
-        </form>
+
+            <form action="add.php" method="post" class="item-add">
+
+                <input type="text" name="task" placeholder="Type  a new item here." class="input" v-model="taskText">
+                <input type="submit" value="submit" class="submit" value="Submit">
+
+            </form>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
