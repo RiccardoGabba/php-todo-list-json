@@ -11,7 +11,8 @@ createApp({
     methods: {
         read() {
             axios.get(this.apiUrl).then((res)=>{
-                this.tasks = res.data();
+                this.tasks = res.data;
+                
             })
         }
     },

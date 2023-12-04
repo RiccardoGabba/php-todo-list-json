@@ -26,7 +26,7 @@
             </ul>
 
 
-            <form action="add.php" method="post" class="item-add">
+            <form action="server.php" method="post" class="item-add">
 
                 <input type="text" name="task" placeholder="Type  a new item here." class="input" v-model="taskText">
                 <input type="submit" value="submit" class="submit" value="Submit">
@@ -34,6 +34,7 @@
             </form>
         </div>
     </div>
+    <script src=" https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
 

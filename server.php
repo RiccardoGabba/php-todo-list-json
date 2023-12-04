@@ -1,6 +1,6 @@
 <?php 
 //importa nell'index
-$fileContent=file_get_contents("db.json");
+$fileContent=file_get_contents(__DIR__ ."/data/db.json");
 
 //decodifica file content
 $lista = json_decode($fileContent,true);
