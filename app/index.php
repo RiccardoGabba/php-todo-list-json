@@ -1,3 +1,11 @@
+<?php 
+if(isset($_POST['submit'])) {
+$task = $_POST['username'];
+echo $task;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
 </head>
 <body>
     <div class="list">
-        <h1>To Do </h1>
+        <h1>To Do</h1>
 
         <ul class="items">
             
@@ -21,8 +29,8 @@
         
 
         <form action="add.php" method="post" class="item-add">
-            <input type="text" name="name" placeholder="Type  a new item here." class="input" autocomplete="off" required>
-            <input type="submit" value="Add" class="submit">
+            <input type="text" name="task" placeholder="Type  a new item here." class="input" >
+            <input type="submit" value="submit" class="submit" value="Submit">
         </form>
     </div>
 </body>
