@@ -1,11 +1,3 @@
-<?php 
-if(isset($_POST['submit'])) {
-$task = $_POST['username'];
-echo $task;
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +12,18 @@ echo $task;
 
         <ul class="items">
             
-            <li>
-                <span class="item ">ciao</span>
-                <a href="#" class="done-button">Mark as done</a>
+            <li v-for='task in tasks'> 
+                <span>{{ tasks.text }}</span>
             </li>
             
         </ul>
         
 
         <form action="add.php" method="post" class="item-add">
-            <input type="text" name="task" placeholder="Type  a new item here." class="input" >
+
+            <input type="text" name="task" placeholder="Type  a new item here." class="input" v-model="taskText" >
             <input type="submit" value="submit" class="submit" value="Submit">
+
         </form>
     </div>
 </body>
